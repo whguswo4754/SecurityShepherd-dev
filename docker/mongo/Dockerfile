@@ -1,6 +1,6 @@
 ARG MONGODB_VERSION
 
-FROM docker AS builder
+FROM docker:19 AS builder
 USER root
 WORKDIR /workdir
 COPY target/moduleSchemas.js moduleSchemas.js
