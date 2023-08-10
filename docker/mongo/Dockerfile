@@ -1,6 +1,6 @@
 ARG MONGODB_VERSION
 
-FROM docker AS builder
+FROM docker:24.0.5-dind-alpine3.18 AS builder
 USER root
 WORKDIR /workdir
 COPY target/moduleSchemas.js moduleSchemas.js
